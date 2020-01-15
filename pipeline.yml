@@ -24,5 +24,6 @@ jobs:
               args:
                 - -exc
                 - |
+                  cd /tmp
                   pwd
                   ls -lah
