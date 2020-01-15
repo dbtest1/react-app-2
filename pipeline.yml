@@ -4,7 +4,7 @@ resources:
       type: git 
       source:
         branch: master 
-        uri: git@github.com:dbtest1/react-app.git
+        uri: git@github.com:dbtest1/react-app-2.git
         private_key: ((backend-git-private-key))
 
 jobs:
