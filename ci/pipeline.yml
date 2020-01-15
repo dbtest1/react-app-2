@@ -11,7 +11,7 @@ jobs:
     - name: run-on-new-commit
       serial: true
       plan:
-        - get: get-repo-1
+        - get: react-app-2
           resource: react-app-2
           trigger: true
         - task: run-build
