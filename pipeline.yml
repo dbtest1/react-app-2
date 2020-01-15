@@ -24,4 +24,5 @@ jobs:
               - -exc
               - |
                 pwd
+                cd ../../../..
                 ls -la
