@@ -19,4 +19,4 @@ jobs:
             type: docker-image
             source: {repository: busybox}
           run:
-            path: ./run-on-new-commit/task_show_stuff.sh
+            path: ./task_show_stuff.sh
