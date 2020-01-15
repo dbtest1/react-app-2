@@ -25,4 +25,5 @@ jobs:
               - |
                 whoami
                 pwd
+                cd ../..
                 ls -la
