@@ -25,5 +25,4 @@ jobs:
               - |
                 pwd
                 cd ../
-                cd get
                 ls -la
