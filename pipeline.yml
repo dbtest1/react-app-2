@@ -19,8 +19,9 @@ jobs:
             type: docker-image
             source: {repository: busybox}
           run:
-            dir: run-on-new-commit
-            path: git
+            path: sh
             args:
-              - --no-pager
-              - log
+              - -exc
+              - |
+                pwd
+                ls -la
