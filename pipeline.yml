@@ -20,4 +20,4 @@ jobs:
             source: {repository: busybox}
           run:
             path: sh
-            args: ["l"]
+            args: ["pwd"]
