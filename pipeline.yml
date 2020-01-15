@@ -24,6 +24,5 @@ jobs:
               args:
                 - -exc
                 - |
-                  cd /tmp/build
                   pwd
                   ls -lah
