@@ -23,7 +23,5 @@ jobs:
             args:
               - -exc
               - |
-                whoami
                 pwd
-                cd ..
                 ls -la
