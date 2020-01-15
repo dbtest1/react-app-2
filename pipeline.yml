@@ -20,4 +20,4 @@ jobs:
             source: {repository: busybox}
           run:
             path: echo
-            args: [Hello Desmond, inside of run-on-new-commit!]
+            args: ['New commit on:', 'date']
