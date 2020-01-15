@@ -20,4 +20,4 @@ jobs:
             source: {repository: busybox}
           run:
             path: sh
-            args: ["-lc"]
+            args: ["l"]
