@@ -20,4 +20,8 @@ jobs:
             source: {repository: busybox}
           run:
             path: sh
-            args: ["pwd"]
+            args:
+              - -exc
+              - |
+                whoami
+                pwd
