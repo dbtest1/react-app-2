@@ -1,0 +1,20 @@
+---
+resources:
+    - name: react-app-2
+      type: git 
+      source:
+        branch: master 
+        uri: git@github.com:dbtest1/react-app-2.git
+        private_key: ((backend-git-private-key))
+
+jobs:
+    - name: run-on-new-commit
+      serial: true
+      plan:
+        - get: get-repo-1
+          resource: react-app-2
+          trigger: true
+        - task: run-build
+          file: react-app-2/ci/tasks/run_build.yml
+          params: 
+            HELLO: ((hello))
