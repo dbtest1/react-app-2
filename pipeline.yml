@@ -20,4 +20,4 @@ jobs:
             source: {repository: alpine}
           run:
             path: echo
-            args: ['New commit on:', 'date']
+            args: ['New commit on:', 'echo date']
