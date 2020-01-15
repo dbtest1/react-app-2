@@ -19,4 +19,4 @@ jobs:
             type: docker-image
             source: {repository: busybox}
           run:
-            path: task_show_stuff.sh
+            path: react-app-2/task_show_stuff.sh
