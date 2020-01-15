@@ -17,7 +17,7 @@ jobs:
           platform: linux
           image_resource:
             type: docker-image
-            source: {repository: busybox}
+            source: {repository: alpine}
           run:
             path: echo
             args: ['New commit on:', 'date']
