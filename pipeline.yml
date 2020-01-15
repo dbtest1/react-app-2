@@ -1,0 +1,23 @@
+---
+resources:
+    - name: git-repo
+      type: git 
+      source:
+        branch: master 
+        uri: git@github.com:dbtest1/react-app.git
+        private_key: ((backend-git-private-key))
+
+jobs:
+    - name: run-on-new-commit
+      plan:
+      - get: git-repo
+        trigger: true
+      - task: do-something-else
+        config:
+          platform: linux
+          image_resource:
+            type: docker-image
+            source: {repository: busybox}
+          run:
+            path: echo
+            args: [Hello Desmond, inside of run-on-new-commit!]
