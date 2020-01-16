@@ -9,12 +9,10 @@ const rowStyle = {
 const row = (props) => {
     const rowNum = `${props.rowNum}`;
     return <div style={rowStyle}>
-        <Square number={rowNum * 1}/>
-        <Square number={rowNum * 2}/>
-        <Square number={rowNum * 3}/>
-
-       
+        <Square number={1 + '-' +rowNum}/>
+        <Square number={2 + '-' +rowNum}/>
+        <Square number={3 + '-' +rowNum}/>
     </div>
 }
 
-export default row;
+export default row; 

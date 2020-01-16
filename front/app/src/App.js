@@ -1,8 +1,6 @@
 import React from 'react';
 import BoardComponent from './components/BoardComponent';
 
-import './App.css';
-
 const appStyle = {
   textAlign: 'center',
   display: 'flex',
@@ -16,9 +14,7 @@ const appStyle = {
 function App() {
   return (
     <div className="App" style={appStyle}>
-      <BoardComponent borderColor={'red'} >
-          
-      </BoardComponent>
+      <BoardComponent borderColor={'red'}/>
     </div>
   );
 }

@@ -6,10 +6,20 @@ const squareStyle = {
     border: '1px solid blue'
 }
 
+function userCharacterInput(squareInfo) {
+    console.log(`square ${squareInfo} was clicked!`)
+}
+
+
 const SquareComponent = (props) => {
 
     const num = `${props.number}`;
-    return <div style={squareStyle}>Square - {num}</div>
+    return (
+        <div style={squareStyle} 
+            onClick={() => userCharacterInput(num)}
+        >
+            {num}
+        </div>)
 
 }
 
