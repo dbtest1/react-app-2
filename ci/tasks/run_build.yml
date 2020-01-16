@@ -15,3 +15,5 @@ params:
 
 run:
     path: react-app-2/ci/scripts/build.sh
+
+    
